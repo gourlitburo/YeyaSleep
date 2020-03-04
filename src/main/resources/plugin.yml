@@ -1,0 +1,14 @@
+main: yy.gourlitburo.yeyasleep.Main
+name: YeyaSleep
+version: 0.0.0
+api-version: 1.15
+author: Zack Guard
+description: A sleep plugin.
+commands:
+  yeyasleep:
+    aliases: [ys]
+    description: Manage YeyaSleep.
+    usage: "Usage: /ys reload"
+permissions:
+  yeyasleep.manage:
+    default: op
