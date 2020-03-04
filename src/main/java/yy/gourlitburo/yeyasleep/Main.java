@@ -62,7 +62,7 @@ public class Main extends JavaPlugin {
                 isAdvancing.remove(world.getUID());
             }
         };
-        task.runTaskLater(this, 60); // 3 seconds * 20 ticks/second
+        task.runTaskLater(this, 5 * 20);
     }
 
     @Override
