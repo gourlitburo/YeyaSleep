@@ -15,13 +15,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class Main extends JavaPlugin {
-    final String PERM_MANAGE = "yeyasleep.manage";
-
     Logger logger = getLogger();
     Server server = getServer();
     PluginManager manager = Bukkit.getPluginManager();
 
-    private Map<UUID, Double> sleepingCount = new HashMap<>();
+    private Map<UUID, Double> sleepingCount = new HashMap<>(); // TODO: change this to a ConcurrentHashMap
     private Map<UUID, Boolean> isAdvancing = new ConcurrentHashMap<>();
 
     void setSleepingCount(World world, double direction) {

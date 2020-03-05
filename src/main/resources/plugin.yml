@@ -9,6 +9,7 @@ commands:
     aliases: [ys]
     description: Manage YeyaSleep.
     usage: "Usage: /ys reload"
+    permission: yeyasleep.manage
 permissions:
   yeyasleep.manage:
     default: op
